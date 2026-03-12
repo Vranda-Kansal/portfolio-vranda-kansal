@@ -1,10 +1,21 @@
+"use client";
+
+import Lottie from "lottie-react";
+// CORRECT ✅
+import girlWaving from "../../public/hello.json";
+
 export default function Home() {
   return (
-    <main className="bg-background min-h-screen p-10">
-      <h1 className="text-app-text text-3xl font-bold">Hello World</h1>
-      <button className="bg-primary text-white px-4 py-2 rounded-lg mt-4">
-        Click me
-      </button>
-    </main>
+    <>
+      <div className="bg-background fixed inset-0 -z-10" />
+      <main className="relative min-h-screen">
+        <Lottie
+          animationData={girlWaving}
+          loop={true}
+          autoplay={true}
+          className="w-[30%] absolute m-auto -bottom-18 right-0 left-0"
+        />
+      </main>
+    </>
   );
 }

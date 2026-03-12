@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #5af63b;
-  --color-background: #ffffff;
-  --color-text: #111827;
+  --color-primary: #6f3ef9;
+  --color-background: #0a0e1f;
+  --color-text-primary: #0a0e1f;
+  --color-text-secondary: #d4d4d0;
 }
 
 @theme {
   --color-primary: var(--color-primary);
   --color-background: var(--color-background);
-  --color-app-text: var(--color-text);
+  --color-app-text: var(--color-text-primary);
+  --color-font-text: var(--color-text-secondary);
 }
